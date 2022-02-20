@@ -1,5 +1,6 @@
 #cities-table-wrapper {
-  height: 100%;
+  width: 75%;
+  height: 95%;
   flex-grow: 1;
   overflow-y: scroll;
 }

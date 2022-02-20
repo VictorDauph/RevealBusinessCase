@@ -1,0 +1,25 @@
+how to navigate? usestates on the table component that evolve with the buttonclicks.
+Redo the fetch with the useState
+
+1)left side:
+-All cities (button and fetch) OK
+-countries  + (number of cities) (button and fetch) OK
+-visual indicator of selected country (background color changed) OK
+-We can fetch by countries but not with a determined number of cities(the answer always has 500 cities) OK
+
+2)table:
+-citylink:its page to geoname  OK
+-columns: Name(+link) - Country - Sub-Country OK
+/!\ implement React Window on the table
+
+3)testing:
+We need to test one aspect of the code. Maybe the fetching and displaying of a country related cities?
+It should be the most complex feature of the app.
+- How to use Jest?
+
+Careful:
+- Don't render all the cities at the same time. Use some fractionated rendering triggered by user screen position.(React-Window)
+- We can fetch all of the cities data at the the same time, but not render all.
+- use the country database ton build the side menu.
+- Keep the commnentarys and modularity in mind.
+- Use typescript and React specificities

@@ -1,3 +1,24 @@
 #sidebar {
-  width: 200px;
+  width: 25%;
+  height: 95%;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+/*hover effect on a sidebar element */
+.sidebarElement:hover{
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* activation effect on a sidebar element*/
+.activated{
+  background-color: lightblue;
+}
+
+table{
+  height: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
 }
