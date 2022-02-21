@@ -1,8 +1,10 @@
-#cities-table-wrapper {
+.infinite-scroll-component__outerdiv {
+  position: absolute;
+  left: 30%;
   width: 75%;
   height: 95%;
   flex-grow: 1;
-  overflow-y: scroll;
+  /*overflow-y: scroll; */
 }
 
 table {
