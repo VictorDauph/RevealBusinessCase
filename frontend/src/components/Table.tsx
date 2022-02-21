@@ -34,6 +34,7 @@ export const Table = (props:any) => {
   }, []); //useEffect is launched only at the page loading.
 
   useEffect(()=>{
+    window.scrollTo(0, 0)
     setI(1)
     setHasMore(true)
     console.log("selectedCountry",props.selectedCountry)
