@@ -47,12 +47,16 @@ export const Sidebar = (props:any) => {
     <div id="sidebar">
       <table>
         <thead>
-              <th>Cities App</th> 
+          <tr>
+            <th>
+              Cities App
+            </th>
+          </tr>
         </thead>
         <tbody>
-        <tr onClick={(event)=>handleClick(event,null)} className="sidebarElement activated">All cities</tr>
-        {countries?.map((country)=>(
-          <tr onClick={(event)=>handleClick(event,country)} className="sidebarElement">{country.name} ({country.count})</tr> 
+        <tr onClick={(event)=>handleClick(event,null)} className="sidebarElement activated"><td>All cities</td></tr>
+        {countries?.map((country,index)=>(
+          <tr key={index} onClick={(event)=>handleClick(event,country)} className="sidebarElement"><td>{country.name} ({country.count})</td></tr> 
         ))}
         </tbody>
       </table>

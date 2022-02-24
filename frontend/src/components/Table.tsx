@@ -1,6 +1,5 @@
 import "./Table.css";
 import { useEffect, useState } from "react";
-import { cpuUsage } from "process";
 
 import InfiniteScroll from "react-infinite-scroll-component"
 

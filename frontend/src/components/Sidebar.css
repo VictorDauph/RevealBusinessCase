@@ -23,3 +23,8 @@ table{
   border-collapse: collapse;
   border-spacing: 0px;
 }
+
+thead td{
+  font-weight: bolder;
+  font-size: 22px;
+}
