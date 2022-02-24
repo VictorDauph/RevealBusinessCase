@@ -11,16 +11,14 @@ export const Sidebar = (props:any) => {
   const [countries, setCountries] = useState<Country[] | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/countries") //fetch all but once
-      .then((response) => response.json())
-      .then(setCountries);
+    fetchCountries()
   }, []); //useEffect is launched only at the page loading.
 
-  function selectStyling(country:Country|null){
-
-
+  function fetchCountries(){
+    fetch("http://localhost:3001/api/countries") //fetch all but once
+    .then((response) => response.json())
+    .then(setCountries);
   }
-
   function deselectAll(){
     const allSidebarElements= document.getElementsByClassName("sidebarElement")
     Array.from(allSidebarElements).forEach( element=>{
@@ -61,3 +59,4 @@ export const Sidebar = (props:any) => {
     </div>
   );
 };
+
